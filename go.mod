@@ -1,6 +1,6 @@
 module github.com/nirmata/dockerfile-json
 
-go 1.19
+go 1.21
 
 require (
 	github.com/moby/buildkit v0.12.2
@@ -15,12 +15,6 @@ require (
 	github.com/docker/go-units v0.5.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/stretchr/testify v1.8.4 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
 	gotest.tools/v3 v3.5.1 // indirect
-)
-
-replace (
-	github.com/containerd/containerd => github.com/containerd/containerd v1.7.7
-	github.com/docker/docker/v23/v20 => github.com/docker/docker v24.0.6+incompatible
 )
