@@ -1,4 +1,4 @@
-module github.com/keilerkonzept/dockerfile-json
+module github.com/nirmata/dockerfile-json
 
 go 1.19
 

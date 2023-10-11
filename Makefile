@@ -20,7 +20,7 @@ release: README.md zip
 	hub release create $(VERSION) -m "$(VERSION)" -a release/$(APP)_$(VERSION)_osx_x86_64.tar.gz -a release/$(APP)_$(VERSION)_windows_x86_64.zip -a release/$(APP)_$(VERSION)_linux_x86_64.tar.gz -a release/$(APP)_$(VERSION)_windows_x86_32.zip -a release/$(APP)_$(VERSION)_linux_x86_32.tar.gz -a release/$(APP)_$(VERSION)_linux_arm64.tar.gz
 
 README.md:
-	go get github.com/keilerkonzept/$(APP) && <README.template.md subst \
+	go get github.com/nirmata/$(APP) && <README.template.md subst \
 		EXAMPLE_6="$$($(APP)  --expand-build-args=false --jsonpath=$$..BaseName examples/Dockerfile.3 | jq .)" \
 		EXAMPLE_5="$$($(APP) --jsonpath=$$..BaseName examples/Dockerfile.3 | jq .)" \
 		EXAMPLE_4="$$($(APP) --jsonpath=$$..Image --build-arg ALPINE_TAG=hello-world examples/Dockerfile.3 | jq .)" \

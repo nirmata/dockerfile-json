@@ -9,7 +9,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/keilerkonzept/dockerfile-json/pkg/dockerfile"
+	"github.com/nirmata/dockerfile-json/pkg/dockerfile"
 	"github.com/yalp/jsonpath"
 )
 
